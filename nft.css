@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--very-darkblue-main);
+}
+
+:root {
+    /* COLORS Primary */
+    --color-primary-softblue: hsl(215, 51%, 70%);
+    --color-primary-cyan: hsl(178, 100%, 50%);
+
+    /* COLORS Neutral */
+    --very-darkblue-main: hsl(217, 54%, 11%);
+    --very-darkblue-card: hsl(216, 50%, 16%);
+    --very-darkblue-line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: var(--very-darkblue-card);
+    width: 375px;
+    padding: 25px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.container figure {
+    margin-bottom: 20px;
+}
+.container figure img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.container .description {
+    margin-bottom: 20px;
+}
+.container .description p:nth-child(1) {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+.container .description p:nth-child(2) {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--color-primary-softblue);
+    line-height: 22pt;
+}
+
+.container .values {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--very-darkblue-line);
+    margin-bottom: 20px;
+}
+.container .values .values-ethereum {
+    display: flex;
+    align-items: center;
+}
+.container .values .values-ethereum img {
+    width: 15px;
+    margin-right: 8px;
+}
+.container .values .values-ethereum p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--color-primary-cyan);
+}
+.container .values .values-clock {
+    display: flex;
+    align-items: center;
+}
+.container .values .values-clock img {
+    width: 20px;
+    margin-right: 8px;
+}
+.container .values .values-clock p {
+    font-size: 1.6rem;
+    color: var(--color-primary-softblue);
+}
+
+.container .footer {
+    display: flex;
+    align-items: center;
+}
+.container .footer img {
+    width: 37px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+.container .footer p {
+    margin-left: 10px;
+    font-size: 1.6rem;
+    color: var(--color-primary-softblue);
+    /* letter-spacing: .5px; */
+}
+.container .footer p span {
+    color: var(--white);
+}
